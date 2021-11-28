@@ -27,7 +27,9 @@ public class GegalkinsPolinom {
         for (int i = 1; i < triangleTable[0].length; i++) {
             result.append(triangleTable[0][i] == 1 ? " ⊕ " + templates[i] : "");
         }
-        result.deleteCharAt(1);
+        result.deleteCharAt(0);
+        result.deleteCharAt(0);
+        result.deleteCharAt(0);
         return result.toString();
     }
 }

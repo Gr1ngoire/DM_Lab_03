@@ -33,5 +33,19 @@ public class Main {
         System.out.println("Polinom");
         System.out.println(gegalkinsPolinom.getPolinom(testFunc));
         System.out.println("=================================================");
+
+        System.out.println("=============Task5(Checks)===========");
+        Checks checks = new Checks();
+        System.out.println("Saves constant 0");
+        System.out.println(checks.savesConstantZero(testFunc));
+        System.out.println("Saves constant 0");
+        System.out.println(checks.savesConstantOne(testFunc));
+        System.out.println("Function is dual");
+        System.out.println(checks.isDualFunction(testFunc));
+        System.out.println("Function is monotone");
+        System.out.println(checks.isMonotone(testFunc));
+        System.out.println("Function is linear");
+        System.out.println(checks.isLinear(gegalkinsPolinom.getPolinom(testFunc)));
+        System.out.println("=====================================");
     }
 }
