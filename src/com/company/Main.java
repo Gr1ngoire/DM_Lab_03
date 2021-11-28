@@ -15,7 +15,12 @@ public class Main {
         Utils.printArray(dualFunction.getDualFunc(testFunc));
         System.out.println("===============================");
 
-        System.out.println("=============Task3()===========");
+        System.out.println("=============Task3(DDNF and DKNF)===========");
+        DDNFandDKNF ddnFandDKNF = new DDNFandDKNF();
+        System.out.println("DDNF:");
+        System.out.println(ddnFandDKNF.getDDNF(testFunc));
+        System.out.println("DKNF:");
+        System.out.println(ddnFandDKNF.getDKNF(testFunc));
         System.out.println("===============================");
 
         System.out.println("=============Task4(Gigalkin's polinom)===========");
