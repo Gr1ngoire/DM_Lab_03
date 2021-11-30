@@ -36,10 +36,10 @@ public class Checks {
     }
 
     public boolean isLinear(String gegalkinsPolinom) {
-        if (gegalkinsPolinom.equals("") || gegalkinsPolinom.equals("x") || gegalkinsPolinom.equals("y") || gegalkinsPolinom.equals("z")) {
+        if (gegalkinsPolinom.equals("") || gegalkinsPolinom.equals("x") || gegalkinsPolinom.equals("y") || gegalkinsPolinom.equals("z") || gegalkinsPolinom.equals("1")) {
             return true;
         } else {
-            return gegalkinsPolinom.matches("([xyz] ⊕ [xyz]) (⊕ [xyz])*");
+            return gegalkinsPolinom.matches("([xyz1] ⊕ [xyz1]) (⊕ [1xyz])*");
         }
     }
 }

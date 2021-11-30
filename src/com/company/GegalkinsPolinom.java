@@ -24,7 +24,7 @@ public class GegalkinsPolinom {
         String[] templates = {"1",   "z",   "y",   "yz",   "x",  "xz",  "xy",  "xyz"};
         int[][] triangleTable = getTriangleTable(function);
         StringBuilder result = new StringBuilder();
-        for (int i = 1; i < triangleTable[0].length; i++) {
+        for (int i = 0; i < triangleTable[0].length; i++) {
             result.append(triangleTable[0][i] == 1 ? " ⊕ " + templates[i] : "");
         }
         result.deleteCharAt(0);
