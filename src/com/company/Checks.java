@@ -26,7 +26,7 @@ public class Checks {
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j < table.length - 1; j++) {
                 if (table[i][0] <= table[j][0] && table[i][1] <= table[j][1] && table[i][2] <= table[j][2]) {
-                    if (table[j][3] > table[i][3]) {
+                    if (table[i][3] > table[j][3]) {
                         return false;
                     }
                 }

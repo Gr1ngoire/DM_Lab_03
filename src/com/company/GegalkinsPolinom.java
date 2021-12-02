@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class GegalkinsPolinom {
 
     public int[][] getTriangleTable(int[] function) {
@@ -14,6 +16,8 @@ public class GegalkinsPolinom {
             for (int i = 0; i < iterLimit; i++) {
                 if (i + 1 != normalToWorkMatrix.length && j + 1 != normalToWorkMatrix[0].length) {
                     normalToWorkMatrix[i][j+1] = normalToWorkMatrix[i][j] ^ normalToWorkMatrix[i+1][j];
+                } else {
+                    normalToWorkMatrix[i][j+1] = 2;
                 }
             }
         }

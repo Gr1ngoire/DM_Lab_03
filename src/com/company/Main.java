@@ -38,7 +38,7 @@ public class Main {
         Checks checks = new Checks();
         System.out.println("Saves constant 0");
         System.out.println(checks.savesConstantZero(testFunc));
-        System.out.println("Saves constant 0");
+        System.out.println("Saves constant 1");
         System.out.println(checks.savesConstantOne(testFunc));
         System.out.println("Function is dual");
         System.out.println(checks.isDualFunction(testFunc));
